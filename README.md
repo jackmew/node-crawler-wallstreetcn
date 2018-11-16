@@ -7,11 +7,12 @@ A node crawler using [cheerio](https://github.com/cheeriojs/cheerio) & [nightmar
 ## Installation
 
 ```
-npm install node-crawler-wallstreetcn
+git clone git@github.com:jackmew/node-crawler-wallstreetcn.git  
 ```
 
 ## Usage  
 ```
+cd node-crawler-wallstreetcn  
 node index.js
 ```  
 
@@ -31,4 +32,5 @@ DEBUG=nightmare node index.js commodities 8
 
 Then it will save json file to /output.
 
-
+## Todo
+- [ ] Command Line Interface
