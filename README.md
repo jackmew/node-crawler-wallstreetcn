@@ -30,7 +30,9 @@ Dev mode to show the log  .
 DEBUG=nightmare node index.js commodities 8
 ```  
 
-Then it will save json file to /output.
+Then it will save json file to /output.  
+
+![saveToJsonFile](https://github.com/jackmew/node-crawler-wallstreetcn/blob/master/screenshot/saveToJsonFile.png?raw=true)
 
 ## Todo
 - [ ] Command Line Interface
