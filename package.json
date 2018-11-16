@@ -1,0 +1,30 @@
+{
+  "name": "node-crawler-wallstreetcn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "nightmare",
+    "cheerio",
+    "wallstreetcn",
+    "web",
+    "scraper",
+    "scraping",
+    "华尔街见闻",
+    "華爾街見聞",
+    "爬蟲"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "nightmare": "^3.0.1",
+    "repl": "^0.1.3"
+  }
+}
