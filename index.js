@@ -1,21 +1,23 @@
 const getWallstreetNews = require('./lib/getWallstreetNews')
 const getWallstreetArticle = require('./lib/getWallstreetArticle')
 const getWallstreetNewsAndArticle = require('./lib/getWallstreetNewsAndArticle')
+const { newsTypes } = require('./global/config')
 // getWallstreetNews.start()
 // getWallstreetArticle.start('/articles/3438434')
 // getWallstreetNewsAndArticle.start()
 
 const args = (process.argv.slice(2))
-let newsTypes = getWallstreetNews.newsTypes[0]
+let newsType = newsTypes[0].name
 let numOfRecord = 5
 
 // 第一個參數判斷
 if (args[0]) {
-    if (getWallstreetNews.newsTypes.indexOf(args[0]) === -1) {
-        console.log(`First argument options: [${getWallstreetNews.newsTypes.toString()}]`)
+    const newsTypeNames = newsTypes.map(newsType => newsType.name)
+    if (newsTypeNames.indexOf(args[0]) === -1) {
+        console.log(`First argument options: [${newsTypes.toString()}]`)
         return
     }
-    newsTypes = args[0]
+    newsType = args[0]
 }
 
 // 第二個參數判斷
@@ -27,5 +29,5 @@ if (args[1]) {
     numOfRecord = Number(args[1])
 }
 
-getWallstreetNewsAndArticle.start(newsTypes, numOfRecord)
+getWallstreetNewsAndArticle.start(newsType, numOfRecord)
 

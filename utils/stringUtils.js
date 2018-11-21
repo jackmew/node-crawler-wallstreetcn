@@ -59,7 +59,15 @@ const dateTimeTransform = (currentDateTime, dateTimeStr) => {
     }
     return dateTimeStr
 }
-
+/**
+ * /articles/3438073 -> 3438073
+ * @param {string} link 
+ */
+const getArticleId = (link) => {
+    let articleId = link.substring(1, link.length)
+    articleId = articleId.substring(articleId.indexOf('/') + 1, articleId.length)
+    return articleId
+}
 
 
 module.exports = {
@@ -67,5 +75,6 @@ module.exports = {
     removeWrittenFromWallstreet,
     removeWhitespaceAndNewline,
     contentTextTransform,
-    dateTimeTransform
+    dateTimeTransform,
+    getArticleId
 }
