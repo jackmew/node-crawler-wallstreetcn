@@ -23,6 +23,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
+    "leancloud-storage": "^3.11.0",
     "moment": "^2.22.2",
     "nightmare": "^3.0.1",
     "repl": "^0.1.3"

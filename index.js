@@ -14,7 +14,7 @@ let numOfRecord = 5
 if (args[0]) {
     const newsTypeNames = newsTypes.map(newsType => newsType.name)
     if (newsTypeNames.indexOf(args[0]) === -1) {
-        console.log(`First argument options: [${newsTypes.toString()}]`)
+        console.log(`First argument options: [${newsTypes.map(newsType => newsType.name).toString()}]`)
         return
     }
     newsType = args[0]

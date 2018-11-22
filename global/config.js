@@ -14,28 +14,29 @@ const newsTypes = [
 ]
 
 const searchCommodities = [
-    { no: 'CN', name: '富时A50', search: '富时' },
-    { no: 'CL', name: '国际原油', search: '原油' },
-    { no: 'HSI', name: '恒指期货', search: '恒指' },
-    { no: 'YM', name: '迷你道指', search: '道指' },
-    { no: 'NQ', name: '迷你纳指', search: '纳指' },
-    { no: 'ES', name: '迷你标普', search: '标普' },
-    { no: 'FDAX', name: '德国DAX', search: '德国DAX' },
-    { no: 'NK', name: '日经225', search: '日经225' },
-    { no: 'MHI', name: '小恒指', search: '恒指' },
-    { no: 'GC', name: '美黄金', search: '黄金' },
-    { no: 'HHI', name: 'H股指数', search: 'H股' },
-    { no: 'MCH', name: '小H股指数', search: 'H股' },
-    { no: 'HG', name: '美铜', search: '铜' },
-    { no: 'SI', name: '美白银', search: '白银' },
-    { no: 'QM', name: '小原油', search: '原油' },
-    { no: 'FDXM', name: '迷你德国DAX指数', search: '德国DAX' },
-    { no: 'NG', name: '天然气指数', search: '天然气' },
+    { commodityNo: 'CN', commodityName: '富时A50', search: '富时' },
+    { commodityNo: 'CL', commodityName: '国际原油', search: '原油' },
+    { commodityNo: 'HSI', commodityName: '恒指期货', search: '恒指' },
+    { commodityNo: 'YM', commodityName: '迷你道指', search: '道指' },
+    { commodityNo: 'NQ', commodityName: '迷你纳指', search: '纳指' },
+    { commodityNo: 'ES', commodityName: '迷你标普', search: '标普' },
+    { commodityNo: 'FDAX', commodityName: '德国DAX', search: '德国DAX' },
+    { commodityNo: 'NK', commodityName: '日经225', search: '日经225' },
+    { commodityNo: 'MHI', commodityName: '小恒指', search: '恒指' },
+    { commodityNo: 'GC', commodityName: '美黄金', search: '黄金' },
+    { commodityNo: 'HHI', commodityName: 'H股指数', search: 'H股' },
+    { commodityNo: 'MCH', commodityName: '小H股指数', search: 'H股' },
+    { commodityNo: 'HG', commodityName: '美铜', search: '铜' },
+    { commodityNo: 'SI', commodityName: '美白银', search: '白银' },
+    { commodityNo: 'QM', commodityName: '小原油', search: '原油' },
+    { commodityNo: 'FDXM', commodityName: '迷你德国DAX指数', search: '德国DAX' },
+    { commodityNo: 'NG', commodityName: '天然气指数', search: '天然气' },
 ]
 
 module.exports = {
     baseUrl: 'https://wallstreetcn.com',
     baseNewsUrl: 'https://wallstreetcn.com/news',
+    baseSearchUrl: 'https://wallstreetcn.com/search?q=',
     newsTypes,
     searchCommodities
 };
